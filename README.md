@@ -1,0 +1,1 @@
+Small JS class for compress and resize images files.

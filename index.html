@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File compress demo</title>
+    <script src="compress.js"></script>
+    <script>
+        const compress = new Compress();
+        /**
+         *  Setting options for Compress
+         *
+         *  @param quality - (default 1)
+            @param minQuality - (default 0.8)
+            @param size - max bit size (default 3 Mb)
+         *  @param maxWidth - resize width (default 1920 px)
+         *  @param maxHeight - resize height (default 1920 px)
+         *  @param resize - (defualt true)
+         */
+        const options = {
+            maxWidth: 600, // px
+            maxHeight: 600, // px
+        }
+
+        const compressFile = (event) => {
+            const file = event.target.files[0];
+            compress.attach(file, options)
+        }
+    </script>
+    <style>
+        img {
+            display: block;
+        }
+
+        input {
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input onchange='compressFile(event)' type='file'>
+</body>
+
+</html>
