@@ -1,14 +1,12 @@
 Скачайте index.html и compress.js в одну папку.<br>
-Откройте index.html и загрузите изображение. Сжатая копия появится на странице.
-
-Класс Compress имеет публичный метод attach, который инициализирует работы скрипта.
+Откройте index.html и загрузите изображение. Сжатая копия появится на странице.<br>
+Класс Compress имеет публичный метод attach, который инициализирует работы скрипта.<br>
 
      const compress = new Compress(); 
      compress.attach(file, options);
 
-Где атрибут file - обьект File (https://developer.mozilla.org/ru/docs/Web/API/File)
-
-атрибут options - данные для обработки файла. 
+Где атрибут file - обьект File (https://developer.mozilla.org/ru/docs/Web/API/File) <br>
+атрибут options - данные для обработки файла. <br>
 
          {
             quality: 1,
