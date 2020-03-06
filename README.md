@@ -4,9 +4,8 @@
 
 Класс Compress имеет публичный метод attach, который инициализирует работы скрипта.
 
-const compress = new Compress(); 
-
-compress.attach(file, options);
+     const compress = new Compress(); 
+     compress.attach(file, options);
 
 Где атрибут file - обьект File (https://developer.mozilla.org/ru/docs/Web/API/File)
 
